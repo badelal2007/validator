@@ -1,5 +1,5 @@
 {
-    "name": "blk/validator",
+    "name": "badelal2007/validator",
     "description": "PHP Validator class.",
     "type": "library",
     "autoload": {
