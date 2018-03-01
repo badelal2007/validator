@@ -20,7 +20,7 @@ class Required implements RuleInterface
      */
     public function validate($field, $value, Arguments $args)
     {
-        return !empty($value);
+        return !empty(trim($value));
     }
 
     /**
