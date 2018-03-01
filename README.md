@@ -40,10 +40,10 @@ var_dump($validator->failed());
 var_dump($validator->getErrors());
 
 #Print first error if any for 'password' field
-if($errors->get('password')) { echo '<span class="pressroom-error">'.$errors->get('password')->first().'</span>'; }
+if($errors->get('password')) { echo '<span class="error">'.$errors->get('password')->first().'</span>'; }
 
 #Print last error if any for 'password' field
-if($errors->get('password')) { echo '<span class="pressroom-error">'.$errors->get('password')->last().'</span>'; }
+if($errors->get('password')) { echo '<span class="error">'.$errors->get('password')->last().'</span>'; }
 
 #Change 'message' for validation rule
 $validator->validate($_POST, [
