@@ -8,13 +8,13 @@
 Validator can be installed via `composer` just execute the following command
 in your project root
 
-```composer require blk/validator```
+```composer require badelal2007/validator```
 
 Or add the following in your composer.json file and run `composer install`
 
 ```
 "require": {
-    "blk/validator": "dev-master"
+    "badelal2007/validator": "dev-master"
 }
 ```
 
