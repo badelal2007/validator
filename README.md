@@ -29,6 +29,28 @@ $validator->validate($_POST, [
     'password'         => 'required|password:strong',
     'confirm_password' => 'required|same:password'
 ]);
+
+#Return true if validation pass
+var_dump($validator->passed());
+
+#Return true if validation failed
+var_dump($validator->failed());
+
+#Return all erroes if any
+var_dump($validator->getErrors());
+
+#Print first error if any for 'password' field
+if($errors->get('password')) { echo '<span class="pressroom-error">'.$errors->get('password')->first().'</span>'; }
+
+#Print last error if any for 'password' field
+if($errors->get('password')) { echo '<span class="pressroom-error">'.$errors->get('password')->last().'</span>'; }
+
+#Change 'message' for validation rule
+$validator->validate($_POST, [
+    'email'     => 'required--message=Please enter email|email--Please enter valid email ID.',
+    'password'  => 'required'
+]);
+
 ```
 If you've files to validate you will need to merge `$_POST|$_GET` and with `$_FILES` just like the following
 ```php
