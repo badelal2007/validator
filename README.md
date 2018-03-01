@@ -23,7 +23,7 @@ Using validator in your project is super simple, here is an example
 ```php
 require_once __DIR__ . '/vendor/autoload.php';
 
-$validator = new validator/Validator();
+$validator = new validator\Validator();
 $validator->validate($_POST, [
     'username'         => 'required',
     'password'         => 'required|password:strong',
@@ -32,7 +32,7 @@ $validator->validate($_POST, [
 ```
 If you've files to validate you will need to merge `$_POST|$_GET` and with `$_FILES` just like the following
 ```php
-$validator = new validator/Validator();
+$validator = new validator\Validator();
 $validator->validate(array_merge($_POST, $_FILES), [
     'profile_picture' => 'file:image'
 ]);
