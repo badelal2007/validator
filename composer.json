@@ -3,7 +3,7 @@
     "description": "PHP Validator class.",
     "type": "library",
     "autoload": {
-        "psr-4": {"validator\\": ["src"],
+        "psr-0": {"validator": ["src"],
     },
     "require": {
       "php": ">=5.4"
