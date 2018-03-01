@@ -1,0 +1,19 @@
+{
+    "name": "blk/validator",
+    "description": "PHP Validator class.",
+    "type": "library",
+    "autoload": {
+        "psr-4": {"validator\\": ["src"],
+    },
+    "require": {
+      "php": ">=5.4"
+    },
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Bade Lal",
+            "email": "badelal2007@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
+}
