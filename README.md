@@ -36,7 +36,7 @@ var_dump($validator->passed());
 #Return true if validation failed
 var_dump($validator->failed());
 
-#Return all erroes if any
+#Return all errores if any
 var_dump($validator->getErrors());
 
 #Print first error if any for 'password' field
